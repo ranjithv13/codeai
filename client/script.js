@@ -74,7 +74,7 @@ const handleSubmit = async (e) => {
 
     loader(messageDiv)
 
-    const response = await fetch('codeai-kmny3k5f0-ranjithv13.vercel.app', {
+    const response = await fetch('codeai-amber.vercel.app', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
