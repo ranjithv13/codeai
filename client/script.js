@@ -77,12 +77,12 @@ const handleSubmit = async (e) => {
     const response = await fetch('https://codeai-3ih7.onrender.com/', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+            Content-Type: 'application/json',
         },
         body: JSON.stringify({
             prompt: data.get('prompt')
         })
-    });
+    })
 
     clearInterval(loadInterval)
     messageDiv.innerHTML = " "
