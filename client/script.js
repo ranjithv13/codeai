@@ -15,7 +15,7 @@ function loader(element) {
         if (element.textContent === '....') {
             element.textContent = '';
         }
-    }, 300);
+    }, 500);
 }
 
 function typeText(element, text) {
@@ -28,7 +28,7 @@ function typeText(element, text) {
         } else {
             clearInterval(interval)
         }
-    }, 20)
+    }, 40)
 }
 
 function generateUniqueId() {
@@ -77,7 +77,7 @@ const handleSubmit = async (e) => {
     const response = await fetch('https://codeai-3ih7.onrender.com/', {
         method: 'POST',
         headers: {
-            Content-Type: 'application/json',
+            'Content-Type': 'application/json',
         },
         body: JSON.stringify({
             prompt: data.get('prompt')
