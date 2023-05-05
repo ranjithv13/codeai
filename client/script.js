@@ -82,7 +82,7 @@ const handleSubmit = async (e) => {
     
     loader(messageDiv)
 
-    const response = await fetch('https://codeai-3ih7.onrender.com/', {
+    const response = await fetch('https://codeai-chat-tzs4.onrender.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
